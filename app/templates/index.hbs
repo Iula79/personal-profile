@@ -1,0 +1,15 @@
+{{outlet}}
+<h1>Welcome to my website</h1>
+
+<p>We hope you find exactly what you're looking for.</p>
+
+{{#each model as |project|}}
+  <h2>{{project.title}}</h2>
+  <p>Owner: {{project.owner}}</p>
+  <p>Type: {{project.type}}</p>
+  <p>Location: {{project.city}}</p>
+  <p>Number of bedrooms: {{project.bedrooms}}</p>
+{{/each}}
+
+{{#link-to "about"}}About{{/link-to}}
+{{#link-to "contact"}}Contact{{/link-to}}
