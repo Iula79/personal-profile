@@ -5,34 +5,44 @@ export default function() {
             type: 'projects',
             id: 1,
             attributes: {
-              title: 'Grand Old Mansion',
-              owner: 'Veruca Salt',
-              city: 'San Francisco',
-              type: 'Estate',
-              bedrooms: 15,
-              image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
+              title: 'Residenza Carducci',
+              description: 'bla bla',
+              technologies: 'etc',
+              link:"" ,
+              image: '/assets/images/residenza_carducci.png'
             }
           }, {
             type: 'projects',
             id: 2,
             attributes: {
-              title: 'Urban Living',
-              owner: 'Mike Teavee',
-              city: 'Seattle',
-              type: 'Condo',
-              bedrooms: 1,
-              image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg'
+                title: 'Swapoween',
+                description: 'bla bla',
+                technologies: 'etc',
+                link:"" ,
+              image: '/assets/images/swapoween.png'
             }
           }, {
             type: 'projects',
             id: 3,
             attributes: {
-              title: 'Downtown Charm',
-              owner: 'Violet Beauregarde',
-              city: 'Portland',
-              type: 'Apartment',
+                title: 'Connect Four',
+                description: 'bla bla',
+                technologies: 'etc',
+                link:"" ,
               bedrooms: 3,
-              image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+              image: '/assets/images/connect_four.png'
+          }
+          },
+          {
+            type: 'projects',
+            id: 4,
+            attributes: {
+                title: 'Todo App',
+                description: 'bla bla',
+                technologies: 'etc',
+                link:"" ,
+              bedrooms: 3,
+              image: '/assets/images/todo.png'
             }
           }]
         };
