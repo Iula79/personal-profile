@@ -7,7 +7,7 @@ export default function() {
             attributes: {
               title: 'Residenza Carducci',
               description: 'bla bla',
-              technologies: 'etc',
+              technologies: 'AngularJS',
               link:"" ,
               image: '/assets/images/residenza_carducci.png'
             }
@@ -17,7 +17,7 @@ export default function() {
             attributes: {
                 title: 'Swapoween',
                 description: 'bla bla',
-                technologies: 'etc',
+                technologies: 'Ruby on Rails',
                 link:"" ,
               image: '/assets/images/swapoween.png'
             }
@@ -27,7 +27,7 @@ export default function() {
             attributes: {
                 title: 'Connect Four',
                 description: 'bla bla',
-                technologies: 'etc',
+                technologies: 'JQuery',
                 link:"" ,
               bedrooms: 3,
               image: '/assets/images/connect_four.png'
@@ -39,7 +39,7 @@ export default function() {
             attributes: {
                 title: 'Todo App',
                 description: 'bla bla',
-                technologies: 'etc',
+                technologies: 'MEANstack',
                 link:"" ,
               bedrooms: 3,
               image: '/assets/images/todo.png'

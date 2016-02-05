@@ -1,7 +1,7 @@
 {{yield}}
 <h2>{{project.title}}</h2>
 <p>Description: {{project.description}}</p>
-<p>Technologies: {{project.technologies}}</p>
+<p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
 {{#if isImageShowing}}
 <p><img src={{project.image}} alt={{project.type}} width="500"></p>
 <button {{action "imageHide"}}>Hide Image</button>
