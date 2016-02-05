@@ -3,12 +3,8 @@
 
 <p>We hope you find exactly what you're looking for.</p>
 
-{{#each model as |project|}}
-  <h2>{{project.title}}</h2>
-  <p>Owner: {{project.owner}}</p>
-  <p>Type: {{project.type}}</p>
-  <p>Location: {{project.city}}</p>
-  <p>Number of bedrooms: {{project.bedrooms}}</p>
+{{#each model as |projectUnit|}}
+{{project-listing project=projectUnit}}
 {{/each}}
 
 {{#link-to "about"}}About{{/link-to}}
