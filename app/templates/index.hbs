@@ -2,6 +2,7 @@
 <h1>Welcome to my website</h1>
 
 <p>We hope you find exactly what you're looking for.</p>
+{{filter-project filteredlist = filteredlist autocomplete=(action 'autocomplete') search=(action 'search')}}
 
 {{#each model as |projectUnit|}}
 {{project-listing project=projectUnit}}
