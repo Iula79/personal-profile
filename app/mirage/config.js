@@ -1,7 +1,6 @@
 export default function() {
-    this.get('/projects', function() {
-        return {
-          data: [{
+    this.get('/projects', function(db,request) {
+        let projects = [{
             type: 'projects',
             id: 1,
             attributes: {
@@ -44,13 +43,21 @@ export default function() {
               bedrooms: 3,
               image: '/assets/images/todo.png'
             }
-          }]
-        };
+        }];
+
+          if(request.queryParams.technologies !== undefined){
+              let filteredProjects = projects.filter(function(i){
+                  return i.attributes.technologies.toLowerCase().indexOf(request.queryParams.technologies.toLowerCase()) !== -1;
+              });
+              return {data: filteredProjects};
+          }
+          else {
+              return {data: projects};
+          }
 
 
 
 
-        
       });
   // These comments are here to help you get started. Feel free to delete them.
 
