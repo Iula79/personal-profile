@@ -1,0 +1,15 @@
+/*HEADER*/
+
+header {
+  background-color: #373637;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+
+
+/*NAVIGATION BAR*/
+header nav {
+  float: right;
+}

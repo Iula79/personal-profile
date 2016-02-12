@@ -2,9 +2,9 @@
 <h2>{{project.title}}</h2>
 <p>Description: {{project.description}}</p>
 <p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
-{{#if isImageShowing}}
+{{#liquid-if isImageShowing class='image-if'}}
 <p><img src={{project.image}} alt={{project.type}} width="500"></p>
 <button {{action "imageHide"}}>Hide Image</button>
 {{else}}
 <button {{action "imageShow"}}>Show Image</button>
-{{/if}}
+{{/liquid-if}}
