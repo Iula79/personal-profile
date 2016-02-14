@@ -7,9 +7,20 @@ header {
     padding-top: 15px;
     padding-bottom: 40px;
 }
+.quote {
+    text-align: justify;
+    font-style: italic;
+    margin: 20px;
+}
+.comment {
+    text-align: justify;
+    margin: 20px;
+}
 
 h1 {
     font-size: 100px;
+    font-family: 'Poiret One', cursive;
+    padding: 0px;
 }
 
 body {

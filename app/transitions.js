@@ -3,6 +3,7 @@ export default function(){
         this.fromRoute('index'),
         this.toRoute('contact'),
         this.toRoute('about'),
+        this.toRoute('proj'),
         this.use('toLeft'),
         this.reverse('toRight')
     );
@@ -12,5 +13,11 @@ export default function(){
         this.use('toLeft'),
         this.reverse('toRight')
     );
-
+    this.transition(
+        this.fromRoute('proj'),
+        this.toRoute('about'),
+        this.toRoute('contact'),
+        this.use('toLeft'),
+        this.reverse('toRight')
+    );
 }

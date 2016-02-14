@@ -1,0 +1,12 @@
+{{outlet}}
+<div class="row">
+  <div class="col-sm-12" id="search">
+    <h2>MY PROJECTS</h2>
+    {{filter-project filteredList = filteredList autoComplete=(action 'autoComplete') search=(action 'search')}}
+  </div>
+</div>
+{{#each model as |project-unit|}}
+  <div class="col-sm-6">
+    {{project-listing project=project-unit}}
+  </div>
+{{/each}}
