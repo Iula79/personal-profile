@@ -1,7 +1,7 @@
 {{yield}}
 <h2>{{project.title}}</h2>
-<p>Description: {{project.description}}</p>
+
 <p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
 
 <p><img src={{project.image}} alt={{project.type}} width="100%"></p>
-<button {{action "showProject"}}>Show Project</button>
+<a href={{project.link}}>Show Project</a>

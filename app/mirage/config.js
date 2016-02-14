@@ -7,7 +7,7 @@ export default function() {
               title: 'Residenza Carducci',
               description: 'bla bla',
               technologies: 'AngularJS',
-              link:"" ,
+              link:"http://www.residenzacarducci.com" ,
               image: '/assets/images/residenza_carducci.png'
             }
           }, {
@@ -17,7 +17,7 @@ export default function() {
                 title: 'Swapoween',
                 description: 'bla bla',
                 technologies: 'Ruby on Rails',
-                link:"" ,
+                link:'http://dry-anchorage-8673.herokuapp.com' ,
               image: '/assets/images/swapoween.png'
             }
           }, {
@@ -27,7 +27,7 @@ export default function() {
                 title: 'Connect Four',
                 description: 'bla bla',
                 technologies: 'JQuery',
-                link:"" ,
+                link:"http://buyer-bird-84202.bitballoon.com" ,
               bedrooms: 3,
               image: '/assets/images/connect_four.png'
           }
@@ -39,7 +39,7 @@ export default function() {
                 title: 'Todo App',
                 description: 'bla bla',
                 technologies: 'MEANstack',
-                link:"" ,
+                link:"http://www.giulialake.com" ,
               bedrooms: 3,
               image: '/assets/images/todo.png'
             }
