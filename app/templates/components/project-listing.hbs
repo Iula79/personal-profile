@@ -2,9 +2,6 @@
 <h2>{{project.title}}</h2>
 <p>Description: {{project.description}}</p>
 <p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
-{{#liquid-if isImageShowing class='image-if'}}
-<p><img src={{project.image}} alt={{project.type}} width="500"></p>
-<button {{action "imageHide"}}>Hide Image</button>
-{{else}}
-<button {{action "imageShow"}}>Show Image</button>
-{{/liquid-if}}
+
+<p><img src={{project.image}} alt={{project.type}} width="100%"></p>
+<button {{action "showProject"}}>Show Project</button>

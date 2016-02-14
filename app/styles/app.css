@@ -1,15 +1,34 @@
 /*HEADER*/
-
-header {
-  background-color: #373637;
-  color: white;
-  padding: 1rem;
-  text-transform: uppercase;
+html {
+    background-color: #3FBDBD;
 }
 
+header {
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
 
+h1 {
+    font-size: 100px;
+}
+
+body {
+    font-family: 'Inconsolata' ;
+    text-align: center;
+    margin: 20px;
+}
 
 /*NAVIGATION BAR*/
 header nav {
   float: right;
+}
+.navigation {
+    width: 200px;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: #3FBDBD;
 }
