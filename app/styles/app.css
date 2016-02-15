@@ -27,8 +27,11 @@ body {
     font-family: 'Inconsolata' ;
     text-align: center;
     margin: 20px;
+    padding-bottom: 20px;
 }
-
+.btn-default {
+    color: #3FBDBD;
+}
 /*NAVIGATION BAR*/
 header nav {
   float: right;

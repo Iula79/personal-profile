@@ -1,0 +1,19 @@
+{{yield}}
+<div class="row">
+
+  <div class="col-sm-3">
+
+  </div>
+  <div class="col-sm-6">
+        <label for='name'>Name</label>
+        {{input value=name class="form-control"}}
+        <label for='email'>Email</label>
+        {{input value=email class="form-control"}}
+        <label for='email'>Comment</label>
+        {{textarea value=comment class="form-control"}}
+      <button {{action "sendMail"}} {{bind-attr disabled="isInvalid" }} class="btn btn-default btn-md" >Send</button>
+
+  </div>
+  <div class="col-sm-3">
+  </div>
+</div>
