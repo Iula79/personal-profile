@@ -4,4 +4,4 @@
 <p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
 
 <p><img src={{project.image}} alt={{project.type}} width="100%"></p>
-<a href={{project.link}}>Show Project</a>
+ {{#link-to "single" project }}Show Project{{/link-to}}

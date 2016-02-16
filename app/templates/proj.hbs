@@ -5,8 +5,12 @@
     {{filter-project filteredList = filteredList autoComplete=(action 'autoComplete') search=(action 'search')}}
   </div>
 </div>
+<div class="flexcontainer">
+
 {{#each model as |project-unit|}}
-  <div class="col-sm-6">
-    {{project-listing project=project-unit}}
-  </div>
+
+    {{project-listing project=project-unit class="flexitem"}}
+
 {{/each}}
+
+</div>

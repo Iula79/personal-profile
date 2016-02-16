@@ -1,64 +1,68 @@
 export default function() {
-    this.get('/projects', function(db,request) {
-        let projects = [{
-            type: 'projects',
-            id: 1,
-            attributes: {
-              title: 'Residenza Carducci',
-              description: 'bla bla',
-              technologies: 'AngularJS',
-              link:"http://www.residenzacarducci.com" ,
-              image: '/assets/images/residenza_carducci.png'
-            }
-          }, {
-            type: 'projects',
-            id: 2,
-            attributes: {
-                title: 'Swapoween',
-                description: 'bla bla',
-                technologies: 'Ruby on Rails',
-                link:'http://dry-anchorage-8673.herokuapp.com' ,
-              image: '/assets/images/swapoween.png'
-            }
-          }, {
-            type: 'projects',
-            id: 3,
-            attributes: {
-                title: 'Connect Four',
-                description: 'bla bla',
-                technologies: 'JQuery',
-                link:"http://buyer-bird-84202.bitballoon.com" ,
-              bedrooms: 3,
-              image: '/assets/images/connect_four.png'
-          }
-          },
-          {
-            type: 'projects',
-            id: 4,
-            attributes: {
-                title: 'Todo App',
-                description: 'bla bla',
-                technologies: 'MEANstack',
-                link:"http://www.giulialake.com" ,
-              bedrooms: 3,
-              image: '/assets/images/todo.png'
-            }
-        }];
-
-          if(request.queryParams.technologies !== undefined){
-              let filteredProjects = projects.filter(function(i){
-                  return i.attributes.technologies.toLowerCase().indexOf(request.queryParams.technologies.toLowerCase()) !== -1;
-              });
-              return {data: filteredProjects};
-          }
-          else {
-              return {data: projects};
-          }
-
-
-
-
+  let projects = [{
+    type: 'projects',
+    id: 1,
+    attributes: {
+      title: 'Residenza Carducci',
+      description: 'bla bla',
+      technologies: 'AngularJS',
+      link: "http://www.residenzacarducci.com",
+      image: '/assets/images/residenza_carducci.png'
+    }
+  }, {
+    type: 'projects',
+    id: 2,
+    attributes: {
+      title: 'Swapoween',
+      description: 'bla bla',
+      technologies: 'Ruby on Rails',
+      link: 'http://dry-anchorage-8673.herokuapp.com',
+      image: '/assets/images/swapoween.png'
+    }
+  }, {
+    type: 'projects',
+    id: 3,
+    attributes: {
+      title: 'Connect Four',
+      description: 'bla bla',
+      technologies: 'JQuery',
+      link: "http://buyer-bird-84202.bitballoon.com",
+      bedrooms: 3,
+      image: '/assets/images/connect_four.png'
+    }
+  }, {
+    type: 'projects',
+    id: 4,
+    attributes: {
+      title: 'Todo App',
+      description: 'bla bla',
+      technologies: 'MEANstack',
+      link: "http://www.giulialake.com",
+      bedrooms: 3,
+      image: '/assets/images/todo.png'
+    }
+  }];
+  this.get('/projects', function(db, request) {
+    if (request.queryParams.technologies !== undefined) {
+      let filteredProjects = projects.filter(function(i) {
+        return i.attributes.technologies.toLowerCase().indexOf(request.queryParams.technologies.toLowerCase()) !== -1;
       });
+      return {
+        data: filteredProjects
+      };
+    } else {
+      return {
+        data: projects
+      };
+    }
+
+  });
+  this.get('/projects/:id', function(db, request) {
+    let id = parseInt(request.params.id);
+    return {
+      data: projects.findBy('id', id)
+    };
+  });
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

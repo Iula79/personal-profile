@@ -1,17 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    isInvalid: true,
-    validForm: function(){
-        if (this.get('name') !== "" && this.get('email') !== "") {
-            this.set('isInvalid',false);
-        } else {
-            this.set('isInvalid', true);
-        }
-    }.observes('name','email'),
-    actions: {
-        sendMail: function() {
-            alert("hi");
-        }
+  isInvalid: function() {
+    if (!this.get('name')  && !this.get('email')) {
+      return true;
+    } else {
+      return false;
     }
+  }.property('name', 'email'),
+  actions: {
+    sendMail: function() {
+      if (this.get("isInvalid")) {
+      } else {
+        alert("hi");
+      }
+    }
+  }
 });
