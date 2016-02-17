@@ -4,7 +4,7 @@ export default function() {
     id: 1,
     attributes: {
       title: 'Residenza Carducci',
-      description: 'bla bla',
+      description: 'As a final project I wanted to rebuild my mom\'s website for the B&B that she has in Verona. It is still a work in progress but I am very proud that her clients are actually using it.',
       technologies: 'AngularJS',
       link: "http://www.residenzacarducci.com",
       image: '/assets/images/residenza_carducci.png'
@@ -14,7 +14,7 @@ export default function() {
     id: 2,
     attributes: {
       title: 'Swapoween',
-      description: 'bla bla',
+      description: 'It was my first personal project. I wanted to build an app where you could exchange halloween costumes with your friends. I used Rails with PostgresSQL as a database. I used Paperclip to deploy the images on Amazon S3 and Bicrypt for password encryption.',
       technologies: 'Ruby on Rails',
       link: 'http://dry-anchorage-8673.herokuapp.com',
       image: '/assets/images/swapoween.png'
@@ -24,7 +24,7 @@ export default function() {
     id: 3,
     attributes: {
       title: 'Connect Four',
-      description: 'bla bla',
+      description: 'This was a school assignment and my first project in Javascript. It was really fun to be able to build a game and deploy it and have people interact with it. ',
       technologies: 'JQuery',
       link: "http://buyer-bird-84202.bitballoon.com",
       bedrooms: 3,
@@ -35,7 +35,7 @@ export default function() {
     id: 4,
     attributes: {
       title: 'Todo App',
-      description: 'bla bla',
+      description: 'This is an exercise that I did in order to practice with MongoDB, Express, AngularJS and Node. ',
       technologies: 'MEANstack',
       link: "http://www.giulialake.com",
       bedrooms: 3,
