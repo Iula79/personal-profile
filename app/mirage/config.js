@@ -14,7 +14,7 @@ export default function() {
     id: 2,
     attributes: {
       title: 'Swapoween',
-      description: 'It was my first personal project. I wanted to build an app where you could exchange halloween costumes with your friends. I used Rails with PostgresSQL as a database. I used Paperclip to deploy the images on Amazon S3 and Bicrypt for password encryption.',
+      description: 'It was my first personal project. I wanted to build an app where you could exchange halloween costumes with your friends. I used Rails with PostgresSQL as a database. I used Paperclip to deploy the images on Amazon S3 and Bcrypt for password encryption.',
       technologies: 'Ruby on Rails',
       link: 'http://dry-anchorage-8673.herokuapp.com',
       image: '/assets/images/swapoween.png'
@@ -41,7 +41,17 @@ export default function() {
       bedrooms: 3,
       image: '/assets/images/todo.png'
     }
-  }];
+}, {
+  type: 'projects',
+  id: 5,
+  attributes: {
+    title: 'Project Bluepoint',
+    description: 'This is a Group Project that we built to calculate elevation and alternative paths on a route. We used Node and the google maps API',
+    technologies: 'Node.js',
+    link: "",
+    image: '/assets/images/project_bluepoint.png'
+  }
+}];
   this.get('/projects', function(db, request) {
     if (request.queryParams.technologies !== undefined) {
       let filteredProjects = projects.filter(function(i) {

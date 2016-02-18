@@ -3,7 +3,8 @@ import Ember from 'ember';
 const language = [
     "AngularJS",
     "JQuery",
-    "MEANstack"
+    "MEANstack",
+    "Node.js"
 ]
 export function projectTechnologies([technologies]/*, hash*/) {
     if (language.contains(technologies)) {

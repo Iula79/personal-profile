@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
     filter:null,
     filteredList:null,
+    rows:2,
     actions: {
         autoComplete(){
             this.get('autoComplete')(this.get('filter'))
@@ -14,4 +15,5 @@ export default Ember.Component.extend({
             this.set('filter', city)
         }
     }
+
 });

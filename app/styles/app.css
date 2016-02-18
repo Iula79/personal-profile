@@ -2,10 +2,8 @@
 html {
     background-color: #3FBDBD;
 }
-
-header {
-    padding-top: 15px;
-    padding-bottom: 40px;
+.page-header {
+padding-bottom: 10px;
 }
 .quote {
     text-align: justify;
@@ -16,11 +14,26 @@ header {
     text-align: justify;
     margin: 20px;
 }
+#logo {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#logo:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 
 h1 {
     font-size: 100px;
     font-family: 'Poiret One', cursive;
     padding: 0px;
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 30px;
+}
+h3 {
+    font-family: 'Poiret One', cursive;
 }
 body {
     font-family: 'Inconsolata' ;
@@ -35,21 +48,25 @@ body {
 header nav {
   float: right;
 }
-.navigation {
-    width: 200px;
-    margin: 0 auto;
+ul {
+    padding-top: 50px;
+    margin:0 auto;
+padding-left:0;
 }
 li {
     list-style-type: none;
+    margin:0;
+    padding:0;
 }
 a {
     color: #3FBDBD;
 }
+
 .flexcontainer {
     display: flex;
     flex-wrap: wrap;
 }
-.flexitem {
+/*.flexitem {
     flex: 1 0 300px;
     margin: 20px;
-}
+}*/

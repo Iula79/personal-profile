@@ -1,7 +1,6 @@
 export default function(){
     this.transition(
         this.fromRoute('index'),
-        this.toRoute('contact'),
         this.toRoute('about'),
         this.toRoute('proj'),
         this.use('toLeft'),
@@ -9,15 +8,19 @@ export default function(){
     );
     this.transition(
         this.fromRoute('about'),
-        this.toRoute('contact'),
         this.use('toLeft'),
         this.reverse('toRight')
     );
     this.transition(
         this.fromRoute('proj'),
         this.toRoute('about'),
-        this.toRoute('contact'),
         this.use('toLeft'),
         this.reverse('toRight')
+    );
+    this.transition(
+        this.fromRoute('proj'),
+        this.toRoute('single'),
+        this.use('toDown'),
+        this.reverse('toUp')
     );
 }
