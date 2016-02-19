@@ -1,0 +1,9 @@
+{{#each organizedItems as |row|}}
+    <div class="row">
+    {{#each row as |cell|}}
+    <div class="col-sm-6">
+        {{yield cell}}
+    </div>
+    {{/each}}
+    </div>
+{{/each}}

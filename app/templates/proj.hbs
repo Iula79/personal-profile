@@ -7,15 +7,12 @@
 </div>
 <!-- <div class="flexcontainer"> -->
 
-{{#each model as |project-unit|}}
-<div class="col-sm-6">
+<!-- {{#each model as |project-unit|}}
+
     {{project-listing project=project-unit class="flexitem"}}
 </div>
-{{/each}}
+{{/each}} -->
 
-{{#each row in rows}}
-   <div class="row">
-         <h1>Hello</h1>    
-   </div>
- {{/each}}
-<!-- </div> -->
+{{#row-creating items=model as |project-unit|}}
+    {{project-listing project=project-unit class="flexitem"}}
+{{/row-creating}}
