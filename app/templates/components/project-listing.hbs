@@ -1,5 +1,5 @@
 {{yield}}
-<h3>{{project.title}}</h3>
+{{#link-to "single" project }}<h3>{{project.title}}</h3>{{/link-to}}
 <p>Technologies: {{project-technologies project.technologies}} - {{project.technologies}}</p>
 <p><img src={{project.image}} alt={{project.type}} style="width:100%; max-width:500px;"></p>
- {{#link-to "single" project }}Show Project{{/link-to}}
+ 
